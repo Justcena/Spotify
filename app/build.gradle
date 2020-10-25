@@ -4,8 +4,10 @@ plugins {
     id 'kotlin-android-extensions'
     id 'kotlin-kapt'
     id 'com.google.gms.google-services'
-//    id  'dagger.hilt.android.plugin'
+    id  'dagger.hilt.android.plugin'
 //    id 'com.google.gms.google-services'
+//    apply plugin: 'kotlin-kapt'
+//    apply plugin: 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -28,10 +30,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
